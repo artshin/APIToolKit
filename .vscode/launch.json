@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug CLI",
+      "program": "${workspaceFolder:APIToolKit}/.build/debug/CLI",
+      "args": [],
+      "cwd": "${workspaceFolder:APIToolKit}",
+      "preLaunchTask": "swift: Build Debug CLI"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Release CLI",
+      "program": "${workspaceFolder:APIToolKit}/.build/release/CLI",
+      "args": [],
+      "cwd": "${workspaceFolder:APIToolKit}",
+      "preLaunchTask": "swift: Build Release CLI"
+    }
+  ]
+}
